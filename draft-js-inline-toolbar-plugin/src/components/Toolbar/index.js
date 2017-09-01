@@ -62,8 +62,8 @@ export default class Toolbar extends React.Component {
       if (!selectionRect) return;
 
         var width = 0;
-        if(_this.toolbar && _this.toolbar.offsetWidth){
-          width = _this.toolbar.offsetWidth;
+        if(this.toolbar && this.toolbar.offsetWidth){
+          width = this.toolbar.offsetWidth;
         }
         const position = {
           top: selectionRect.top - relativeRect.top - toolbarHeight,
